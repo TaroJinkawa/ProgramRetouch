@@ -8,6 +8,7 @@ public class BuyDataBeans  implements Serializable {
 	private int id;
 	private int userId;
 	private int totalPrice;
+	private int allTotalPrice;
 	private int delivertMethodId;
 	private Date buyDate;
 
@@ -64,6 +65,14 @@ public class BuyDataBeans  implements Serializable {
 	public void setDeliveryMethodPrice(int deliveryMethodPrice) {
 		this.deliveryMethodPrice = deliveryMethodPrice;
 	}
+	public int getAllTotalPrice() {
+		return allTotalPrice;
+	}
+	public void setAllTotalPrice(int allTotalPrice) {
+		this.allTotalPrice = allTotalPrice;
+	}
+
+	
 
 
 }

@@ -52,18 +52,16 @@
 								</tr>
 							</thead>
 							<tbody>
+							<%
+							for(int i=0;i<10;i++){
+							%>
 								<tr>
 									<td class="center">サンプル商品名1</td>
 									<td class="center">111111111円</td>
 								</tr>
-								<tr>
-									<td class="center">サンプル商品名2</td>
-									<td class="center">222222222円</td>
-								</tr>
-								<tr>
-									<td class="center">サンプル商品名3</td>
-									<td class="center">333333333円</td>
-								</tr>
+								<%
+								}
+								%>
 								<tr>
 									<td class="center">サンプル</td>
 									<td class="center">123456789円</td>
