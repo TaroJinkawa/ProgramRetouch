@@ -1,4 +1,5 @@
 <%@	page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,11 +29,13 @@
 								</tr>
 							</thead>
 							<tbody>
+							<c:forEach var="BuyDataBeans" items="${ubhd}" >
 								<tr>
-									<td class="center">1234年56月78日90時12分</td>
-									<td class="center">サンプル</td>
-									<td class="center">123456789円</td>
+									<td class="center">${BuyDataBeans.buyDate}</td>
+									<td class="center">${BuyDataBeans.deliveryMethodName}</td>
+									<td class="center">${BuyDataBeans.allTotalPrice}円</td>
 								</tr>
+								</c:forEach>
 							</tbody>
 						</table>
 					</div>
@@ -62,10 +65,13 @@
 								<%
 								}
 								%>
+								<c:forEach var="BuyDataBeans" items="${ubhd}" >
 								<tr>
-									<td class="center">サンプル</td>
-									<td class="center">123456789円</td>
+									<td class="center">${BuyDataBeans.deliveryMethodName}</td>
+									<td class="center">${BuyDataBeans.deliveryMethodPrice}円</td>
+
 								</tr>
+								</c:forEach>
 							</tbody>
 						</table>
 					</div>

@@ -51,7 +51,7 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td class="center"><%=resultBDB.getFormatDate()%></td>
+									<td class="center"><%=resultBDB.getBuyDate()%></td>
 									<td class="center"><%=resultBDB.getDeliveryMethodName()%></td>
 									<td class="center"><%=resultBDB.getTotalPrice()+resultBDB.getDeliveryMethodPrice()%>円</td>
 								</tr>
