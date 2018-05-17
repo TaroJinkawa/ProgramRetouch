@@ -31,7 +31,7 @@
 							<tbody>
 							<c:forEach var="BuyDataBeans" items="${ubhd}" >
 								<tr>
-									<td class="center">${BuyDataBeans.buyDate}</td>
+									<td class="center">${BuyDataBeans.formatDate}</td>
 									<td class="center">${BuyDataBeans.deliveryMethodName}</td>
 									<td class="center">${BuyDataBeans.allTotalPrice}円</td>
 								</tr>
@@ -54,17 +54,12 @@
 									<th class="center" style="width: 20%">単価</th>
 								</tr>
 							</thead>
-							<tbody>
-							<%
-							for(int i=0;i<10;i++){
-							%>
+							<tbody><c:forEach var="BuyDetailDataBeans" items="${bddb}" >
 								<tr>
-									<td class="center">サンプル商品名1</td>
-									<td class="center">111111111円</td>
+									<td class="center">${BuyDetailDataBeans.itemName}</td>
+									<td class="center">${BuyDetailDataBeans.itemPrice}</td>
 								</tr>
-								<%
-								}
-								%>
+								</c:forEach>
 								<c:forEach var="BuyDataBeans" items="${ubhd}" >
 								<tr>
 									<td class="center">${BuyDataBeans.deliveryMethodName}</td>

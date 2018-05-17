@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 
 import base.DBManager;
 import beans.BuyDataBeans;
@@ -43,7 +44,7 @@ public class UserBuyHistoryDetailDAO {
                 int userId = rs.getInt("user_id");
                 int totalPrice = rs.getInt("total_price");
                 int deriveryMethodId = rs.getInt("delivery_method_id");
-                String buyDate = rs.getString("create_date");
+                Date buyDate = rs.getTimestamp("create_date");
 
                 BuyDataBeans bdb = new BuyDataBeans();
 
@@ -123,7 +124,7 @@ public class UserBuyHistoryDetailDAO {
                 int userId = rs.getInt("user_id");
                 int totalPrice = rs.getInt("total_price");
                 int deriveryMethodId = rs.getInt("delivery_method_id");
-                String buyDate = rs.getString("create_date");
+                Date buyDate = rs.getTimestamp("create_date");
 
                 BuyDataBeans bdb = new BuyDataBeans();
 

@@ -2,6 +2,7 @@ package beans;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class BuyDataBeans  implements Serializable {
 	private int id;
@@ -9,7 +10,7 @@ public class BuyDataBeans  implements Serializable {
 	private int totalPrice;
 	private int allTotalPrice;
 	private int delivertMethodId;
-	private String buyDate;
+	private Date buyDate;
 
 	private String deliveryMethodName;
 	private int deliveryMethodPrice;
@@ -41,10 +42,10 @@ public class BuyDataBeans  implements Serializable {
 	public void setDelivertMethodId(int delivertMethodId) {
 		this.delivertMethodId = delivertMethodId;
 	}
-	public String getBuyDate() {
+	public Date getBuyDate() {
 		return buyDate;
 	}
-	public void setBuyDate(String buyDate) {
+	public void setBuyDate(Date buyDate) {
 		this.buyDate = buyDate;
 	}
 	public String getDeliveryMethodName() {

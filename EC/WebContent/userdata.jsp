@@ -78,7 +78,7 @@
 								<c:forEach var="BuyDataBeans" items="${ubhd}" >
 								<tr>
 									<td class="center"><a href="UserBuyHistoryDetail?buy_id=${BuyDataBeans.id}" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
-									<td class="center">${BuyDataBeans.buyDate}</td>
+									<td class="center">${BuyDataBeans.formatDate}</td>
 									<td class="center">${BuyDataBeans.deliveryMethodName}</td>
 									<td class="center">${BuyDataBeans.allTotalPrice}円</td>
 

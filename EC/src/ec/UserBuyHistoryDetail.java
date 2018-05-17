@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import beans.BuyDataBeans;
+import beans.BuyDetailDataBeans;
 import beans.UserDataBeans;
 import dao.UserBuyHistoryDetailDAO;
 import dao.UserDAO;
@@ -48,7 +49,8 @@ public class UserBuyHistoryDetail extends HttpServlet {
 			ArrayList<BuyDataBeans> ubhd = UserBuyHistoryDetailDAO.buyDateId(i);
 			request.setAttribute("ubhd", ubhd);
 
-
+			ArrayList<BuyDetailDataBeans> bddb = UserBuyHistoryDetailDAO.buyDateDetail(i);
+			request.setAttribute("bddb", bddb);
 
 
 
